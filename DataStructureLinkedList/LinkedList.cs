@@ -112,5 +112,19 @@ namespace DataStructureLinkedList
                 ptr.next = newNode;
             }
         }
+
+        /// <summary>
+        /// UC 5 Ability to delete the first element in the LinkedList of sequence 56->30->70
+        /// </summary>
+        internal void Pop()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Stack is Empty, deletion is not possible");
+                return;
+            }
+            Console.WriteLine("Value popped is {0}", this.head.data);
+            this.head = this.head.next;
+        }
     }
 }

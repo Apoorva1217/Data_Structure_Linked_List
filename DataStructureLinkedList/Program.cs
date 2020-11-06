@@ -21,6 +21,9 @@ namespace DataStructureLinkedList
             int x = 30;
             linkedList.InsertAtMid(x);
             linkedList.Display();
+
+            linkedList.Pop();
+            linkedList.Display();
         }
     }
 }
