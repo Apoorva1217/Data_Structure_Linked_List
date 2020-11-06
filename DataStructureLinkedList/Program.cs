@@ -17,6 +17,10 @@ namespace DataStructureLinkedList
             linkedList.Append(30);
             linkedList.Append(70);
             linkedList.Display();
+
+            int x = 30;
+            linkedList.InsertAtMid(x);
+            linkedList.Display();
         }
     }
 }

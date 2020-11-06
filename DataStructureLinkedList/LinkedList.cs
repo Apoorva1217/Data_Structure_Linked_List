@@ -72,5 +72,45 @@ namespace DataStructureLinkedList
             }
             Console.WriteLine("{0} appended", node.data);
         }
+
+        /// <summary>
+        /// UC 4 Ability to insert 30 between 56 and 70
+        /// </summary>
+        /// <param name="x"></param>
+        internal void InsertAtMid(int x)
+        {
+            if (head == null)
+            {
+                head = new Node(x);
+            }
+            else
+            {
+                Node newNode = new Node(x);
+
+                Node ptr = head;
+                int length = 0;
+
+                /// calculate length of the linked list i.e, the number of nodes  
+                while (ptr != null)
+                {
+                    length++;
+                    ptr = ptr.next;
+                }
+
+                /// 'count' the number of nodes after which the new node is to be inserted  
+                int count = ((length % 2) == 0) ? (length / 2) : (length + 1) / 2;
+                ptr = head;
+
+                /// 'ptr' points to the node after which the new node is to be inserted  
+                while (count-- > 1)
+                {
+                    ptr = ptr.next;
+                }
+
+                /// insert the 'newNode' and adjust the required links  
+                newNode.next = ptr.next;
+                ptr.next = newNode;
+            }
+        }
     }
 }
