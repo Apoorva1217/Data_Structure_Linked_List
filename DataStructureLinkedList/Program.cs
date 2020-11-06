@@ -12,6 +12,11 @@ namespace DataStructureLinkedList
             linkedList.Add(30);
             linkedList.Add(70);
             linkedList.Display();
+
+            linkedList.Append(56);
+            linkedList.Append(30);
+            linkedList.Append(70);
+            linkedList.Display();
         }
     }
 }
