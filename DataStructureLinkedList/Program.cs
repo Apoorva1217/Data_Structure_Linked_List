@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace DataStructureLinkedList
 {
@@ -7,10 +6,7 @@ namespace DataStructureLinkedList
     {
         static void Main(string[] args)
         {
-            LinkedList<int> linkedList = new LinkedList<int>();
-            linkedList.AddFirst(56);
-            linkedList.AddFirst(30);
-            linkedList.AddFirst(70);
+            Console.WriteLine("Welcome to Data Structure Linked List");
         }
     }
 }
