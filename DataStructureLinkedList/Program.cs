@@ -33,6 +33,9 @@ namespace DataStructureLinkedList
 
             linkedList.InsertAtParticularPosition(position+2, 40);
             linkedList.Display();
+
+            linkedList.DeleteNode(position);
+            linkedList.Display();
         }
     }
 }

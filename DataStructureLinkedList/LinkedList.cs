@@ -213,5 +213,52 @@ namespace DataStructureLinkedList
             Console.WriteLine(head);
             return head;
         }
+
+        /// <summary>
+        /// UC 9 Ability to delete 40 from the Linked List sequence of 56->30->40->70 and show the size of LinkedList is 3
+        /// </summary>
+        /// <param name="position"></param>
+        public void DeleteNode(int position)
+        {
+            if (head == null)
+            {
+                return;
+            }
+            Node temp = head;
+            if (position == 0)
+            {
+                head = temp.next;
+                return;
+            }
+
+            /// Find previous node of the node to be deleted 
+            for (int i = 0; temp != null && i < position - 1; i++)
+            {
+                temp = temp.next;
+            }
+
+            /// If position is more than number of nodes 
+            if (temp == null || temp.next == null)
+            {
+                return;
+            }
+            Node next = temp.next.next;
+            temp.next = next;
+        }
+
+        /// <summary>
+        /// Count the elements present in the linked list
+        /// </summary>
+        internal void Size()
+        {
+            Node temp = head;
+            int size = 0;
+            while (temp != null)
+            {
+                size++;
+                temp = temp.next;
+            }
+            Console.WriteLine("The size of linked list is : " + size);
+        }
     }
 }

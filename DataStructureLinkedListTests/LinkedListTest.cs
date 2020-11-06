@@ -100,5 +100,19 @@ namespace DataStructureLinkedListTests
             linkedList1.InsertAtParticularPosition(2, 40);
             Assert.AreEqual(2, linkedList1.head.data);
         }
+
+        /// <summary>
+        /// Given Three Numbers When Delete Element 40 Should Return Result
+        /// </summary>
+        [TestMethod]
+        public void GivenThreeNumbers_WhenDeleteElement40_ShouldReturnResult()
+        {
+            LinkedList linkedList1 = new LinkedList();
+            linkedList1.Add(56);
+            linkedList1.Add(30);
+            linkedList1.Add(70);
+            linkedList1.DeleteNode(2);
+            Assert.AreEqual(2, linkedList1.head.data);
+        }
     }
 }
