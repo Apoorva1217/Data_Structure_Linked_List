@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using DataStructureLinkedList;
+using static DataStructureLinkedList.RefactorLinkedList;
 
 namespace DataStructureLinkedList
 {
@@ -7,26 +9,23 @@ namespace DataStructureLinkedList
     {
         static void Main(string[] args)
         {
-            LinkedList<int> linkedList = new LinkedList<int>();
-            linkedList.Add(56);
-            linkedList.Add(30);
-            linkedList.Add(70);
-            linkedList.Display();
 
-            linkedList.Append(56);
-            linkedList.Append(30);
-            linkedList.Append(70);
-            linkedList.Display();
+            SortList<int> sList = new SortList<int>();
+            sList.addNode(56);
+            sList.addNode(30);
+            sList.addNode(40);
+            sList.addNode(70);
+            
+            //Displaying original list  
+            Console.WriteLine("Original list: ");
+            sList.display();
 
-            int x = 30;
-            linkedList.InsertAtMid(x);
-            linkedList.Display();
+            //Sorting list  
+            sList.sortList();
 
-            linkedList.Pop();
-            linkedList.Display();
-
-            linkedList.PopLast();
-            linkedList.Display();
+            //Displaying sorted list  
+            Console.WriteLine("Sorted list: ");
+            sList.display();
         }
     }
 }
