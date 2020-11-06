@@ -7,7 +7,7 @@ namespace DataStructureLinkedList
     {
         static void Main(string[] args)
         {
-            LinkedList<int> linkedList = new LinkedList<int>();
+            LinkedList linkedList = new LinkedList();
             linkedList.Add(56);
             linkedList.Add(30);
             linkedList.Add(70);
@@ -27,6 +27,9 @@ namespace DataStructureLinkedList
 
             linkedList.PopLast();
             linkedList.Display();
+
+            int position = linkedList.Search(30);
+            Console.WriteLine("Index position of element 30 : " + position);
         }
     }
 }

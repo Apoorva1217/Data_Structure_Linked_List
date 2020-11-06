@@ -4,15 +4,15 @@ using System.Text;
 
 namespace DataStructureLinkedList
 {
-    public class LinkedList<T>
+    public class LinkedList
     {
-        internal Node head;
+        public  Node head;
 
         /// <summary>
         /// UC 2 Ability to create Linked List by adding 30 and 56 to 70
         /// </summary>
         /// <param name="data"></param>
-        internal void Add(int data)
+        public  void Add(int data)
         {
             Node node = new Node(data);
             if (this.head == null)
@@ -34,7 +34,7 @@ namespace DataStructureLinkedList
         /// <summary>
         /// Display method to print linked list
         /// </summary>
-        internal void Display()
+        internal  void Display()
         {
             Node temp = this.head;
 
@@ -54,7 +54,7 @@ namespace DataStructureLinkedList
         /// UC 3 Ability to create Linked List by appending 30 and 70 to 56
         /// </summary>
         /// <param name="data"></param>
-        internal void Append(int data)
+        public  void Append(int data)
         {
             Node node = new Node(data);
             if (this.head == null)
@@ -77,7 +77,7 @@ namespace DataStructureLinkedList
         /// UC 4 Ability to insert 30 between 56 and 70
         /// </summary>
         /// <param name="x"></param>
-        internal void InsertAtMid(int x)
+        public void InsertAtMid(int x)
         {
             if (head == null)
             {
@@ -116,7 +116,7 @@ namespace DataStructureLinkedList
         /// <summary>
         /// UC 5 Ability to delete the first element in the LinkedList of sequence 56->30->70
         /// </summary>
-        internal void Pop()
+        public void Pop()
         {
             if (this.head == null)
             {
@@ -130,7 +130,7 @@ namespace DataStructureLinkedList
         /// <summary>
         /// UC 6 Ability to delete the last element in the LinkedList of sequence 56->30->70
         /// </summary>
-        internal void PopLast()
+        public void PopLast()
         {
             if (this.head == null)
             {
@@ -149,6 +149,28 @@ namespace DataStructureLinkedList
             }
             tail.next = null;
             Console.WriteLine("LinkedList after deletion of last element");
+        }
+
+        /// <summary>
+        /// UC 7 Ability to search LinkedList to find Node with value 30
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public int Search(int key)
+        {
+            Node node = this.head;
+            int count = 0;
+
+            while (node != null)
+            {
+                if (node.data == key)
+                {
+                    return count;
+                }
+                node = node.next;
+                count++;
+            }
+            return count;
         }
     }
 }
