@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace DataStructureLinkedList
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            LinkedList<int> linkedList = new LinkedList<int>();
+            LinkedList linkedList = new LinkedList();
             linkedList.Add(56);
             linkedList.Add(30);
             linkedList.Add(70);
@@ -26,6 +26,12 @@ namespace DataStructureLinkedList
             linkedList.Display();
 
             linkedList.PopLast();
+            linkedList.Display();
+
+            int position = linkedList.Search(30);
+            Console.WriteLine("Index position of element 30 : " + position);
+
+            linkedList.InsertAtParticularPosition(position+2, 40);
             linkedList.Display();
         }
     }

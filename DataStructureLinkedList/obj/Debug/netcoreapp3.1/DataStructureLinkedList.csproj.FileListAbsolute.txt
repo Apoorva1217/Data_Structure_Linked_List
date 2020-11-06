@@ -1,0 +1,13 @@
+C:\Users\HP\source\repos\DataStructureLinkedList\DataStructureLinkedList\bin\Debug\netcoreapp3.1\DataStructureLinkedList.exe
+C:\Users\HP\source\repos\DataStructureLinkedList\DataStructureLinkedList\bin\Debug\netcoreapp3.1\DataStructureLinkedList.deps.json
+C:\Users\HP\source\repos\DataStructureLinkedList\DataStructureLinkedList\bin\Debug\netcoreapp3.1\DataStructureLinkedList.runtimeconfig.json
+C:\Users\HP\source\repos\DataStructureLinkedList\DataStructureLinkedList\bin\Debug\netcoreapp3.1\DataStructureLinkedList.runtimeconfig.dev.json
+C:\Users\HP\source\repos\DataStructureLinkedList\DataStructureLinkedList\bin\Debug\netcoreapp3.1\DataStructureLinkedList.dll
+C:\Users\HP\source\repos\DataStructureLinkedList\DataStructureLinkedList\bin\Debug\netcoreapp3.1\DataStructureLinkedList.pdb
+C:\Users\HP\source\repos\DataStructureLinkedList\DataStructureLinkedList\obj\Debug\netcoreapp3.1\DataStructureLinkedList.csprojAssemblyReference.cache
+C:\Users\HP\source\repos\DataStructureLinkedList\DataStructureLinkedList\obj\Debug\netcoreapp3.1\DataStructureLinkedList.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\DataStructureLinkedList\DataStructureLinkedList\obj\Debug\netcoreapp3.1\DataStructureLinkedList.AssemblyInfo.cs
+C:\Users\HP\source\repos\DataStructureLinkedList\DataStructureLinkedList\obj\Debug\netcoreapp3.1\DataStructureLinkedList.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\DataStructureLinkedList\DataStructureLinkedList\obj\Debug\netcoreapp3.1\DataStructureLinkedList.dll
+C:\Users\HP\source\repos\DataStructureLinkedList\DataStructureLinkedList\obj\Debug\netcoreapp3.1\DataStructureLinkedList.pdb
+C:\Users\HP\source\repos\DataStructureLinkedList\DataStructureLinkedList\obj\Debug\netcoreapp3.1\DataStructureLinkedList.genruntimeconfig.cache
