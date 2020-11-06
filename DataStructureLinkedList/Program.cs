@@ -24,6 +24,9 @@ namespace DataStructureLinkedList
 
             linkedList.Pop();
             linkedList.Display();
+
+            linkedList.PopLast();
+            linkedList.Display();
         }
     }
 }

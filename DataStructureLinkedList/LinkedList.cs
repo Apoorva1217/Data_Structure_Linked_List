@@ -126,5 +126,29 @@ namespace DataStructureLinkedList
             Console.WriteLine("Value popped is {0}", this.head.data);
             this.head = this.head.next;
         }
+
+        /// <summary>
+        /// UC 6 Ability to delete the last element in the LinkedList of sequence 56->30->70
+        /// </summary>
+        internal void PopLast()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Stack is Empty, deletion is not possible");
+                return;
+            }
+            if (this.head.next == null)
+            {
+                Console.WriteLine("Stack is Empty, deletion is not possible");
+                return;
+            }
+            Node tail = head;
+            while (tail.next.next != null)
+            {
+                tail = tail.next;
+            }
+            tail.next = null;
+            Console.WriteLine("LinkedList after deletion of last element");
+        }
     }
 }
